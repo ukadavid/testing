@@ -1,0 +1,28 @@
+{
+  "name": "testing-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-html-reporter": "^3.7.0"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  }
+}
